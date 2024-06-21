@@ -4,11 +4,11 @@ import 'package:quiz_app/models/question.dart';
 import 'package:quiz_app/widgets/custom_button_answer.dart';
 
 class QuestionScreen extends StatefulWidget {
-  QuestionScreen({
+  const QuestionScreen({
     required this.onSelectedAnswer,
     super.key,
   });
-  void Function(String) onSelectedAnswer;
+  final void Function(String) onSelectedAnswer;
 
   @override
   State<QuestionScreen> createState() => _QuestionScreenState();
